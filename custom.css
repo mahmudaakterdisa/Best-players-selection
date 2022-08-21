@@ -1,0 +1,6 @@
+.header-h1-color {
+    background: -webkit-linear-gradient(white, rgb(250, 7, 7));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
