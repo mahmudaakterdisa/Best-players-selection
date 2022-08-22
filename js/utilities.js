@@ -24,3 +24,22 @@ function getInnerText(id) {
     const getPlayer1Name = player1Name.innerText;
     return player1Name.innerText;
 }
+
+function getInnerValue(id) {
+    const managerCoast = document.getElementById(id);
+    const managerCoastString = managerCoast.value;
+    const convertmanagerCoast = parseFloat(managerCoastString);
+    return convertmanagerCoast;
+}
+
+function totalMatchCoast(value1, value2, value3) {
+    if (typeof (value1) == String || " " && typeof (value2) == String || " " && typeof (value3) == String || " ") {
+        alert("enter a valid input");
+    }
+    else {
+        const total = value1 + value2 + value3;
+        const totalmatchCoast = document.getElementById("toal-match-coast")
+        totalmatchCoast.innerText = total;
+    }
+
+}
