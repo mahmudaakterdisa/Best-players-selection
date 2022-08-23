@@ -12,11 +12,11 @@ function setSelectedPlayerName(id) {
         creatLi.appendChild(li);
     }
     else {
-        alert("not more than 5");
+        alert("Please Choose only 5 Best Players");
     }
 
 
-    return ul;
+
 }
 function getInnerText(id) {
     const player1Name = document.getElementById(id);
@@ -33,13 +33,20 @@ function getInnerValue(id) {
 }
 
 function totalMatchCoast(value1, value2, value3) {
-    if (typeof (value1) == String || " " && typeof (value2) == String || " " && typeof (value3) == String || " ") {
-        alert("enter a valid input");
-    }
-    else {
-        const total = value1 + value2 + value3;
-        const totalmatchCoast = document.getElementById("toal-match-coast")
-        totalmatchCoast.innerText = total;
-    }
 
+
+    const total = value1 + value2 + value3;
+    const totalmatchCoast = document.getElementById("toal-match-coast")
+    totalmatchCoast.innerText = total;
+
+
+}
+
+
+function disable(element) {
+    const selectedbutton = document.getElementById(element);
+    selectedbutton.setAttribute("disabled", true);
+    if ("disabled" == true) {
+        return;
+    }
 }
