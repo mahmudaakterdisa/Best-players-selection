@@ -1,12 +1,9 @@
 // 1.add event handler in button first one for player1
 document.getElementById("select-player-1").addEventListener("click", function () {
 
-
-
     const selectedPlayer = setSelectedPlayerName("player1-name");
 
     disable("select-player-1");
-
 
 })
 

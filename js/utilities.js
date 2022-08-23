@@ -1,11 +1,11 @@
 
 
 function setSelectedPlayerName(id) {
-    const getText = getInnerText(id);
+    const getText = getInnerText(id);//mbp,messi
 
-    const ul = document.querySelectorAll('li').length;
+    const ol = document.querySelectorAll('li').length;
 
-    if (ul < 5) {
+    if (ol < 5) {
         const creatLi = document.getElementById("selected-v");
         const li = document.createElement("li");
         li.innerText = getText;
@@ -18,13 +18,14 @@ function setSelectedPlayerName(id) {
 
 
 }
+// get players name
 function getInnerText(id) {
     const player1Name = document.getElementById(id);
-    // 2.get player1 name
     const getPlayer1Name = player1Name.innerText;
     return player1Name.innerText;
 }
 
+// return inner input value after convertion
 function getInnerValue(id) {
     const managerCoast = document.getElementById(id);
     const managerCoastString = managerCoast.value;
@@ -32,6 +33,7 @@ function getInnerValue(id) {
     return convertmanagerCoast;
 }
 
+// this function calculate the the amount need to spend for match
 function totalMatchCoast(value1, value2, value3) {
 
 
@@ -42,7 +44,7 @@ function totalMatchCoast(value1, value2, value3) {
 
 }
 
-
+//this is for disable button after one click
 function disable(element) {
     const selectedbutton = document.getElementById(element);
     selectedbutton.setAttribute("disabled", true);

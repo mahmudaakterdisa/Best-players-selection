@@ -14,8 +14,7 @@ document.getElementById("calculate-players-coast").addEventListener("click", fun
 })
 
 document.getElementById("calculate-total-coast").addEventListener("click", function () {
-    // const totalExpenses=document.getElementById("toal-players-balance");
-    // const totalExpensesString=totalExpenses.innerText;
+
     const totalExpensesString = getInnerText("toal-players-balance");
     const convertTotalExpenses = parseFloat(totalExpensesString);
     console.log(convertTotalExpenses);
@@ -29,7 +28,7 @@ document.getElementById("calculate-total-coast").addEventListener("click", funct
 
 
     //coach coast
-    // const coachCoast = document.getElementById("coach-coast")
+
     const payforCoach = getInnerValue("coach-coast");
     console.log(payforCoach);
 
