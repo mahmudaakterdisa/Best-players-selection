@@ -20,9 +20,6 @@ document.getElementById("calculate-total-coast").addEventListener("click", funct
     console.log(convertTotalExpenses);
 
     //manager coast
-    // const managerCoast = document.getElementById("manager-coast");
-    // const managerCoastString = managerCoast.value;
-    // const convertmanagerCoast = parseFloat(managerCoastString);
     const payForManager = getInnerValue("manager-coast");
     console.log(payForManager);
 
